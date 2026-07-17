@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoidTorrent — Clean, fast BitTorrent for Windows</title>
+  <meta name="description" content="VoidTorrent is a lightweight, ad-free, open-source BitTorrent client for Windows. Add magnets or .torrent files, pick files, set limits, and seed — all in a dark, focused interface." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="alternate icon" type="image/png" href="assets/icon-32.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <div class="scroll-progress" id="progress"></div>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><img src="assets/logo.svg" alt="VoidTorrent" /><b>VOID</b><span>TORRENT</span></div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="download/">Download</a>
+        <a href="how-to/">How to use</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-accent" href="download/">Get VoidTorrent</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <span class="badge"><span class="dot"></span> v1.0.0 — Open source · No ads</span>
+    <h1>Download into the <span class="accent">void</span>.<br/>A BitTorrent client that stays out of your way.</h1>
+    <p>VoidTorrent is a lightweight, privacy-respecting BitTorrent client for Windows. Drop in a magnet link or .torrent file, pick the files you want, set your speed limits, and let libtorrent handle the rest.</p>
+    <div class="hero-cta">
+      <a class="btn btn-accent" href="download/">Download for Windows</a>
+      <a class="btn" href="how-to/">How to use</a>
+    </div>
+
+    <!-- mock transfer list -->
+    <div class="mock reveal d4">
+      <div class="mock-bar">
+        <span class="mock-dot live"></span> VoidTorrent
+        <div class="mock-actions"><span></span><span></span><span></span></div>
+      </div>
+      <div class="mock-list">
+        <div class="mock-row">
+          <div class="mock-name">📦 ubuntu-24.04-desktop-amd64.iso</div>
+          <div class="mock-prog"><span style="width:72%"></span></div>
+          <div class="mock-meta"><b>72%</b> · ↓ 4.2 MB/s · ↑ 1.1 MB/s</div>
+        </div>
+        <div class="mock-row">
+          <div class="mock-name">🎞️ docu-series.s01e04.mkv</div>
+          <div class="mock-prog"><span style="width:100%"></span></div>
+          <div class="mock-meta seeding">✓ Complete · seeding ↑ 880 KB/s</div>
+        </div>
+        <div class="mock-row">
+          <div class="mock-name">📁 large-archive.tar.gz</div>
+          <div class="mock-prog"><span style="width:38%"></span></div>
+          <div class="mock-meta"><b>38%</b> · ↓ 2.7 MB/s · 3 files skipped</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats" style="margin-top:32px">
+      <div class="cell"><div class="num counter" data-target="0" data-suffix="ads">0</div><div class="lbl">Ads &amp; trackers</div></div>
+      <div class="cell"><div class="num counter" data-target="40" data-suffix=" MB">0</div><div class="lbl">App size</div></div>
+      <div class="cell"><div class="num counter" data-target="100" data-suffix="%">0</div><div class="lbl">Open source</div></div>
+      <div class="cell"><div class="num counter" data-target="3" data-suffix=" engines">0</div><div class="lbl">DHT · PEX · LSD</div></div>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <section class="section container" id="showcase">
+    <div class="showcase">
+      <div class="panel sheen reveal">
+        <div class="mock-bar">
+          <span class="mock-dot live"></span> VoidTorrent — Transfers
+        </div>
+        <ul class="ticks">
+          <li><span class="tk">↻</span><div><b style="color:var(--void-text)">Resume anywhere.</b> Close the app and unfinished downloads continue right where they stopped.</div></li>
+          <li><span class="tk">⚙</span><div><b style="color:var(--void-text)">Per-file control.</b> Pick files, set priority, or skip what you don't need before and during transfer.</div></li>
+          <li><span class="tk">🚦</span><div><b style="color:var(--void-text)">Smart limits.</b> Cap up/down, limit connections, and let the queue manage itself.</div></li>
+          <li><span class="tk">🔌</span><div><b style="color:var(--void-text)">Auto port-forward.</b> UPnP / NAT-PMP keep you connectable with zero router setup.</div></li>
+        </ul>
+      </div>
+      <div class="copy reveal d1">
+        <h2>Everything a torrent client should be — <span class="accent">nothing it shouldn't</span></h2>
+        <p>VoidTorrent wraps the battle-tested libtorrent engine in a calm, dark interface. No account walls, no bundled offers, no telemetry — just fast, private transfers you stay in control of.</p>
+        <div class="hero-cta" style="justify-content:flex-start;margin-top:28px;">
+          <a class="btn btn-accent" href="download/">Download for Windows</a>
+          <a class="btn" href="how-to/">See how it works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="how">
+    <div class="section-head">
+      <h2 class="reveal">From link to file in <span class="accent">three steps</span></h2>
+      <p class="lead reveal d1">No accounts, no wizards. Just add, choose, and download.</p>
+    </div>
+    <div class="how">
+      <div class="how-step sheen gborder reveal">
+        <div class="how-num">1</div>
+        <h3>Add a source</h3>
+        <p>Paste a <code>magnet:?xt=urn:btih:…</code> link or open a <code>.torrent</code> file. Drag-and-drop works too.</p>
+      </div>
+      <div class="how-step sheen gborder reveal d1">
+        <div class="how-num">2</div>
+        <h3>Choose files</h3>
+        <p>Pick the exact files you want and set per-file priority — or skip the ones you don't need.</p>
+      </div>
+      <div class="how-step sheen gborder reveal d2">
+        <div class="how-num">3</div>
+        <h3>Download &amp; seed</h3>
+        <p>Set speed limits, watch progress, and keep seeding to help the swarm after you finish.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="features">
+    <div class="section-head">
+      <h2 class="reveal">Built for people who just want it to <span class="accent">work</span></h2>
+      <p class="lead reveal d1">Every feature is included by default. No premium tier, no upsells — just a solid torrent client.</p>
+    </div>
+    <div class="features">
+      <div class="feature sheen gborder">
+        <div class="ico">⚡</div>
+        <h3>Magnets &amp; .torrent</h3>
+        <p>Add torrents by magnet link or file. VoidTorrent resolves peers through trackers, DHT, PEX, and local discovery.</p>
+      </div>
+      <div class="feature sheen gborder">
+        <div class="ico">📂</div>
+        <h3>File &amp; priority picker</h3>
+        <p>Open a torrent and tick only the files you want. Set high, normal, or skip priority per file before and during transfer.</p>
+      </div>
+      <div class="feature sheen gborder">
+        <div class="ico">⏯️</div>
+        <h3>Sequential download</h3>
+        <p>Download in order so you can preview media while the rest finishes — perfect for large video packs.</p>
+      </div>
+      <div class="feature sheen gborder">
+        <div class="ico">🚦</div>
+        <h3>Speed limits &amp; scheduler</h3>
+        <p>Cap upload/download, limit connections, and tune active queues so torrents never hog your connection.</p>
+      </div>
+      <div class="feature sheen gborder">
+        <div class="ico">🌐</div>
+        <h3>DHT, PEX &amp; LSD</h3>
+        <p>Find peers automatically through the distributed network, peer exchange, and local service discovery.</p>
+      </div>
+      <div class="feature sheen gborder">
+        <div class="ico">🔌</div>
+        <h3>UPnP / NAT-PMP</h3>
+        <p>Automatic port forwarding keeps you connectable without touching your router settings.</p>
+      </div>
+      <div class="feature sheen gborder">
+        <div class="ico">💾</div>
+        <h3>Resume anytime</h3>
+        <p>Downloads persist across restarts. Close the lid, reopen, and pick up right where you left off.</p>
+      </div>
+      <div class="feature sheen gborder">
+        <div class="ico">🛡️</div>
+        <h3>Ad-free &amp; private</h3>
+        <p>No ads, no bundled toolbars, no telemetry. Your downloads stay your business.</p>
+      </div>
+      <div class="feature sheen gborder">
+        <div class="ico">🔧</div>
+        <h3>Tray &amp; portable</h3>
+        <p>Runs from the system tray and as a single portable .exe. No install required if you don't want one.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="faq">
+    <div class="section-head">
+      <h2 class="reveal">FAQ</h2>
+      <p class="lead reveal d1">Quick answers before you install.</p>
+    </div>
+    <div class="features">
+      <div class="feature sheen gborder"><h3>Is it really free?</h3><p>Yes. VoidTorrent is open-source and free forever. No paid version, no ads.</p></div>
+      <div class="feature sheen gborder"><h3>Windows only?</h3><p>v1.0 targets Windows 10/11 (x64). The libtorrent engine is cross-platform and ports are planned.</p></div>
+      <div class="feature sheen gborder"><h3>Is it safe?</h3><p>The code is transparent and built on libtorrent. Always download from this site and verify the checksum.</p></div>
+      <div class="feature sheen gborder"><h3>Does it seed?</h3><p>By default torrents are auto-managed and keep seeding after completion until you remove them.</p></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand"><img src="assets/logo.svg" alt="VoidTorrent" /><b>VOID</b><span>TORRENT</span></div>
+      <div>
+        <a href="download/">Download</a> &nbsp;·&nbsp;
+        <a href="how-to/">How to use</a> &nbsp;·&nbsp;
+        <a href="#features">Features</a>
+      </div>
+      <div>© 2026 VoidTorrent. Released under the GPLv3 license.</div>
+    </div>
+    <div class="container disclaimer">
+      VoidTorrent is a tool for transferring data. Respect copyright law and only download content you have the right to access. The developers are not responsible for how you use the software.
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

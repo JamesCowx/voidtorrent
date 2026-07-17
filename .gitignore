@@ -1,0 +1,32 @@
+﻿# Build outputs
+build/dist/
+build/build/
+build/installer_work/
+build/VoidTorrent-setup.exe
+build/VoidTorrent-*.exe
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Website downloads (rehosted on GitHub Releases)
+docs/download/VoidTorrent-*.exe
+
+# PyInstaller cache
+build/voidtorrent/
+build/*.toc
+build/*.pyz
+build/*.pkg
+

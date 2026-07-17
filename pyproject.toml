@@ -1,0 +1,22 @@
+[project]
+name = "VoidTorrent"
+version = "1.0.0"
+description = "A dark, minimal BitTorrent client for Windows."
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt6>=6.6.0",
+    "libtorrent>=2.0.0",
+]
+
+[project.scripts]
+voidtorrent = "voidtorrent.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
